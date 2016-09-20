@@ -10,14 +10,16 @@
   <input id="search-term-input" type="text" placeholder="Type something...">
   <ul id="results-list"></ul>
 
-	<!-- 
+	<!--
 		The order you import your *.js files matters! If y.js depends on x.js, then import x.js before
 		y.js.
-		
-		In a full-fledged JavaScript project, we could use a tool like Browserify (http://browserify.org/) or Webpack (https://webpack.github.io/) to figure out the order of the dependencies for us. 
+
+		In a full-fledged JavaScript project, we could use a tool like Browserify (http://browserify.org/) or Webpack (https://webpack.github.io/) to figure out the order of the dependencies for us.
 	-->
   <script src="./words.js" charset="utf-8"></script>
   <script src="./controller.js" charset="utf-8"></script>
+  <script src="./utils.js"></script>
+  <script src="./trieNode.js"></script>
 	<script src="./trie.js"></script>
 	<script src="./main.js"></script>
 </body>
